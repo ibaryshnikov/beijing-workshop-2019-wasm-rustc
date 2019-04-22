@@ -4,10 +4,10 @@ async function main() {
         { env: {
             consume_array(offset, length) {
                 const { memory } = module.instance.exports;
-                const array = new Int8Array(memory.buffer).subarray(
-                    offset / 1,
-                    offset / 1 + length,
-                    );
+                const array = new Int32Array(memory.buffer).subarray(
+                    offset / 4,
+                    offset / 4 + length,
+                );
                 document.body.innerHTML += array.toString();
             }
         }}
