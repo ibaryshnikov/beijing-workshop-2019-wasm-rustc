@@ -7,3 +7,13 @@ Compiling to wasm using pure rustc
 ```
 rustc lib.rs --target wasm32-unknown-unknown --crate-type cdylib
 ```
+
+## Running
+
+Serve statics
+
+```
+http
+````
+
+Then navigate to localhost
