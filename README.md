@@ -2,6 +2,14 @@
 
 Compiling to wasm using pure rustc
 
+## Setting up
+
+Add compilation target to the toolchain
+
+```
+rustup target add wasm32-unknown-unknown
+```
+
 ## Building
 
 ```
